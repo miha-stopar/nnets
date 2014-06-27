@@ -1,7 +1,7 @@
 About
 =====
 
-This is a simple network neural library which I wrote after I couldn't find a neural network
+A simple network neural library I wrote after I couldn't find a neural network
 library where one could easily debug and study back propagation algorithm with different activation and cost functions 
 without browsing through too many classes. 
 It is by no means an extensive neural network library. For any serious work you should
@@ -26,7 +26,7 @@ It supports the following cost functions:
  * sum of squared errors (SSE)
  * cross-entropy (CE)
  
-And it supports an arbitrary number of hidden layers and arbitrary batch size for gradient descent algorithm.
+It supports an arbitrary number of hidden layers and arbitrary batch size for gradient descent algorithm.
 
 How to use
 =====
@@ -35,7 +35,7 @@ To learn XOR function (see code for this and other examples in test folder):
 
 ::
 
-	from neuron.neuralnet import NN
+    from neuron.neuralnet import NN
 	
     inputs = [[0,0], [0,1], [1,0], [1,1]]
     targets = [[0], [1], [1], [0]]
@@ -60,7 +60,7 @@ To learn a function using softmax output layer and two hidden layers:
 
 ::
 
-	inputs = [[0, 0, 1], [1, 0, 0], [0, 1, 0]]
+    inputs = [[0, 0, 1], [1, 0, 0], [0, 1, 0]]
     targets = [[1, 0, 0], [0, 0, 1], [0, 1, 0]]
     nn = NN([3, 3, 5, 3], ["sigmoid", "tanh", "softmax"], cost_function="softmax_ce")
     nn.train(inputs, targets, batch_size=4, alpha=1, lamda=0.0, iterations=1000)
@@ -82,9 +82,9 @@ Approximating the sine function using Recurrent network:
 
 ::
 
-	from neuron.recurrent import Recurrent
-	import pylab as pl
-	import numpy as np
+    from neuron.recurrent import Recurrent
+    import pylab as pl
+    import numpy as np
     
     size = 100
     np.random.seed(0)
@@ -118,19 +118,19 @@ Approximating the sine function using Recurrent network:
     pl.show()
 
 
-.. image:: https://raw.github.com/miha-stopar/nnets/master/sine.png
+.. image:: https://raw.github.com/miha-stopar/nnets/master/test/sine.png
 
 
 How to find hyperparameters
 =====
 
-You can use *findparameters.find* function to search for the optimal hyperparameters. For example for recognition of
+You can use *findparameters.find* function to try to find the optimal hyperparameters. For example for recognition of
 handwritten digits (see *digits.py* and *digits_findparameters.py* in *test* folder):
 
 ::
 
-	import scipy.io
-	from neuron import findparameters
+    import scipy.io
+    from neuron import findparameters
 
     training_data = scipy.io.loadmat('../data/digits/ex4data1.mat')
     X = training_data.get("X")
