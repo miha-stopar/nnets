@@ -24,14 +24,14 @@ It supports the following activations functions:
 It supports the following cost functions:
 
  * sum of squared errors (SSE)
- * cross-entropy (CE)
+ * cross entropy (CE)
  
-It supports an arbitrary number of hidden layers and arbitrary batch size for gradient descent algorithm.
+And it supports an arbitrary number of hidden layers and arbitrary batch size for gradient descent algorithm.
 
 How to use
 =====
 
-To learn XOR function (see code for this and other examples in test folder):
+To learn XOR function (see code for this and other examples in *test* folder):
 
 ::
 

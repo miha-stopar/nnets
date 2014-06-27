@@ -21,8 +21,8 @@ if __name__ == "__main__":
     
     pl.subplot(211)
     pl.plot(epoch_errors)
-    pl.xlabel('Epoch number')
-    pl.ylabel('error (default SSE)')
+    pl.xlabel('epoch number')
+    pl.ylabel('error')
     
     output = []
     for index, inp in enumerate(inputs):
