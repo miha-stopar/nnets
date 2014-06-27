@@ -55,7 +55,7 @@ The output looks like:
 	[1, 0] -> [ 0.99327432]
 	[1, 1] -> [ 0.00975482]
 
-To learn a function using softmax output layer and two hidden layers:
+To learn (some nonsense) function using softmax output layer and two hidden layers:
 
 ::
 
