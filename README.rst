@@ -1,9 +1,8 @@
 About
 =====
 
-A simple network neural library I wrote after I couldn't find a neural network
-library where one could easily debug and study back propagation algorithm with different activation and cost functions 
-without browsing through too many classes. 
+A simple network neural library that might provide an initial point for studying the backpropagation algorithm with different activation and cost functions 
+(without browsing through too many classes). 
 It is by no means an extensive neural network library. For any serious work you should
 use libraries like:
  * `Theano <http://deeplearning.net/software/theano/>`_
