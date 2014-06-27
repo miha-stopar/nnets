@@ -157,7 +157,8 @@ handwritten digits (see *digits.py* and *digits_findparameters.py* in *test* fol
     findparameters.find(evaluate, X, targets, net_type="feedforward", input_size=400, output_size=10, 
                         output_activation="sigmoid", cost_function="ce")
  
- You should get accuracy for a bunch of different hyperparameters configurations, some of them:
+
+You should get accuracy for a bunch of different hyperparameters configurations, some of them:
  
 ::
  
