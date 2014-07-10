@@ -1,14 +1,7 @@
 About
 =====
 
-A simple network neural library that might provide an initial point for studying the backpropagation algorithm with different activation and cost functions 
-(without browsing through too many classes). 
-It is by no means an extensive neural network library. For any serious work you should
-use libraries like:
- * `Theano <http://deeplearning.net/software/theano/>`_
- * `Torch7 <http://torch.ch/>`_
-
-nnets supports the following neural network types:
+Python neural network library that provides the following network types:
  
  * feed-forward neural network
  * recurrent (Elman) neural network 
